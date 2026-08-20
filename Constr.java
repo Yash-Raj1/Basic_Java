@@ -3,12 +3,12 @@ class Human{
     private String name; //Not accessible outside the class
     
 
-    public Human(){
+    public Human(){ //Default constructor
         age=12;
         name="Kanha";
     }
 
-    public Human(String n1, int a1){
+    public Human(String n1, int a1){ //Parameterized constructor
         this.name=n1;
         this.age=a1;
     }
@@ -39,7 +39,7 @@ public class Constr {
         Human h1= new Human("yash raj", 19); 
         System.out.println("Name: "+h1.getName());  
         System.out.println("Age: "+h1.getAge());
-        
+
         h1.setAge(23);
         h1.setName("Yash Raj");
         System.out.println("Name: "+h1.getName());  
