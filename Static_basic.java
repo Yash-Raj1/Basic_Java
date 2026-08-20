@@ -7,6 +7,17 @@ class Mobile{
         System.out.println("Price: "+price);
         System.out.println("Name: "+name);
     }
+
+    //static method-Here we cannot use the nonstatic variable in static method 
+    public static void show1(){
+        //Error - System.out.println("Brand is" + brand + "Price is" + price + "Name is" + name ;)
+        System.out.println(name);
+    }
+
+    // But another way to use nonstatic variable by just using the reference of particular object
+    public static void show1(Mobile obj){
+        System.out.println("Brand is" + obj.brand + "Price is" + obj.price + "Name is" + name);
+    }
 }
 
 public class Static_basic{
@@ -26,5 +37,9 @@ public class Static_basic{
 
         m1.show();
         m2.show();
+
+
+        Mobile.show1();
+        Mobile.show1(m1);//Access nonstatic variable in static method by using refernce of particular object
     }
 }
