@@ -24,6 +24,7 @@ public class Inherit {
         obj.add(2,3); //Here subclass - VeryAdvCalc is using the properties of super class i.e, AdvCalc
         obj.mul(2,9);
         double r1=obj.power(2,3);
-        System.out.println(r1);
+        double r2=obj.power(2,3);
+        System.out.println(r1+r2);
     }
 }
