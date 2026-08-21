@@ -20,8 +20,10 @@ class AdvCalc extends Calc{
 
 public class Inherit {
     public static void main(String[] args) {
-        AdvCalc obj=new AdvCalc();
-        obj.add(2,3); //Here subclass - AdvCalc is using the propertiees of super class i.e, Calc
+        VeryAdvCalc obj=new VeryAdvCalc();
+        obj.add(2,3); //Here subclass - VeryAdvCalc is using the properties of super class i.e, AdvCalc
         obj.mul(2,9);
+        double r1=obj.power(2,3);
+        System.out.println(r1);
     }
 }
