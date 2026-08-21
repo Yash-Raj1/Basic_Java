@@ -25,16 +25,19 @@ class Mobile{
 }
 
 public class Static_block{
-    public static void main(String[] args){
+    public static void main(String[] args) throws ClassNotFoundException{
         //At this time the class mobile is loaded in class loader(First time the object is creted of Mobile class) and it automatically call the static block first time but what if when the object is not created then how we call the static block - there is one method that is class of class
         
-        Mobile m1=new Mobile();
-        m1.brand="Samsung";
-        m1.price=20000;
-        Mobile.name="Samrtphone"; //Static variable is accessed by class name and also shared betwwen the different objects
+        // Mobile m1=new Mobile();
+        // m1.brand="Samsung";
+        // m1.price=20000;
+        // Mobile.name="Samrtphone"; //Static variable is accessed by class name and also shared betwwen the different objects
         
 
-        Mobile m2=new Mobile();
-        m2.show();
+        //By using class of class(forName method)
+        Class.forName("Mobile"); //Mobilev class is automatically loaded in classloader without creating an object
+
+        // Mobile m2=new Mobile();
+        // m2.show();
     }
 }
