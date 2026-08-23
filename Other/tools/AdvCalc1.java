@@ -1,4 +1,4 @@
-package tools;
+package Other.tools;
 
 public class AdvCalc1 extends Calc1{
     public int mul(int n1,int n2){

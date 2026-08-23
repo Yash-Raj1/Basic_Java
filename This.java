@@ -24,5 +24,6 @@ class B extends A{
 public class This {
     public static void main(String[] args) {
         B obj =new B(5);
+        System.out.println(obj);
     }
 }

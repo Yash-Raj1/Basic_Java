@@ -7,5 +7,8 @@ public class PackageKaImport {
         Calc1 ob=new Calc1();
         int r=ob.add(2, 6);
         System.out.println(r);
+        AdvCalc1 ob1=new AdvCalc1();
+        int r2=ob1.mul(2, 6);
+        System.out.println(r2);
     }
 }
